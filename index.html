@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pic2Map - GPS Image Mapper</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="exif.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Pic2Map</h1>
+        <p>Upload an image to extract GPS metadata and plot it on the map.</p>
+    </header>
+    <main>
+        <input type="file" id="imageInput" accept="image/*">
+        <p id="errorMessage" class="error"></p>
+        <div id="map"></div>
+        <div class="manual-coords">
+            <h2>Manual Location Input</h2>
+            <label for="manualCoords">Enter Coordinates (Latitude, Longitude):</label>
+            <input type="text" id="manualCoords" placeholder="e.g., 37.7749, -122.4194">
+            <button id="plotCoords">Plot Location</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pic2Map. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
